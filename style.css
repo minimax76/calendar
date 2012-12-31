@@ -1,0 +1,118 @@
+/* calendario */
+
+div#mesi{
+  width:95%;
+	margin-left:5%;
+	margin-bottom:10px;
+	height:50px;
+	clear:both;
+}
+div#mesi div{
+	float:left;
+}
+div#mesi div#cx{
+	width:92.1%;
+	height:48px;
+	margin:0 5px 0 5px;
+	border:1px solid #999;
+	line-height:48px;
+	text-align:center;
+	font-size:1.75em;
+	font-weight:bold;
+	color:#8B9DB4;
+	text-shadow:0 1px 0 #fff;
+}
+div#mesi div#sx, div#mesi div#dx{
+	width:3.5%;
+	height:50px;
+	font-size:0px;
+}
+div#mesi div#sx a, div#mesi div#dx a{
+	display:block;
+	width:98%;
+	background-color:#6C0;
+	height:48px;
+	border:1px solid #999;
+}
+div#mesi div#sx a{
+	background-image:url(../Immagini/mese_sx.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#BAC5D1;
+	border:1px solid #999;
+}
+div#mesi div#dx a{
+	background-image:url(../Immagini/mese_dx.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#BAC5D1;
+	border:1px solid #999;
+}
+div#mesi div#sx a:hover{
+	background-image:url(../Immagini/mese_sx_hover.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#8B9DB4;
+	border:1px solid #999;
+}
+div#mesi div#dx a:hover{
+	background-image:url(../Immagini/mese_dx_hover.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#8B9DB4;
+	border:1px solid #999;
+}
+table#calendario{
+	width:100%;
+	border-collapse:collapse;
+}
+table#calendario th{
+	width:15.8333%;
+	border:1px solid #999;
+	padding:5px 0 5px 0;
+	font-size:0.875em;
+	color:#808080;
+	text-align:center;
+}
+table#calendario th.scuro{
+	background-color:#CCC;
+}
+table#calendario th.chiaro{
+	background-color:#e2e2e2;
+}
+table#calendario th#oggi{
+	background-image:url(../Immagini/oggi.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+table#calendario th.ore{
+	width:5%;
+	border:1px solid #999;
+	padding:5px 0 5px 0;
+	font-size:0.875em;
+	color:#666;
+	text-align:center;
+}
+table#calendario td{
+	border:1px solid #999;
+	padding:5px 0 5px 0;
+	font-size:0.6875em;
+	color:#666;
+	text-align:center;
+}
+table#calendario td.prenotato{
+	border:1px solid #999;
+	padding:5px 0 5px 0;
+	font-size:0.6875em;
+	color:#FFF;
+	text-align:center;
+	background-color:#D1BABB;
+}
+table#calendario td.vuoto{
+	border:1px solid #999;
+	padding:5px 0 5px 0;
+	font-size:0.6875em;
+	color:#666;
+	text-align:center;
+	background-color:#FFF;
+}
